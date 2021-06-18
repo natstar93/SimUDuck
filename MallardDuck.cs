@@ -6,11 +6,14 @@ namespace SimUDuck
 {
     class MallardDuck : Duck
     {
+        public MallardDuck() : base(new FlyWithWings(), new Quack())
+        { 
+            // if you put something here it will overwrite base class!
+        }
         public override string Display()
         {
-            string s = "I am green";
-            return s;
+            return "I am green";
+            
         }
-
     }
 }
